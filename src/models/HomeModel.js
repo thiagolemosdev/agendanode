@@ -1,10 +1,6 @@
-const mongoose = require("mongoose");
+const Contato = require("../models/ContatoModel");
 
-const HomeSchema = new mongoose.Schema({
-  titulo: { type: String, required: true },
-  descricao: String,
-});
-
-const HomeModel = mongoose.model("Home", HomeSchema);
-class Home {}
-module.exports = Home;
+exports.index = async (req, res) => {
+  const contatos = await Contato.buscarContatos();
+  res.render("index", { contatos });
+};
