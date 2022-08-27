@@ -51,7 +51,7 @@ yarn dev
 
 You can view the project through the links below:
 
-- [Live Preview](https://agendanode.thiagolemos.tech/)
+- [Live Preview](https://crud.thiagolemos.tech/)
 
 <!-- - [Figma](<https://www.figma.com/file/DVibpHTm5PNEXwkNeg6DzJ/DD-%2F-Rocketflix-(Copy)>) -->
 
