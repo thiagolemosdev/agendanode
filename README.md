@@ -8,9 +8,10 @@
 <p align="center">
   <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=131313&labelColor=323A46" alt="License">
   
-  <img src="https://img.shields.io/github/forks/thiagolemosdev/movie-today?label=forks&message=MIT&color=131313&labelColor=323A46" alt="Forks">
+  <img src="https://img.shields.io/github/forks/thiagolemosdev/agendanode?label=forks&message=MIT&color=131313&labelColor=323A46" alt="Forks">
 
-  <img src="https://img.shields.io/github/stars/thiagolemosdev/movie-today?label=stars&message=MIT&color=131313&labelColor=323A46" alt="Stars">
+<img src="https://img.shields.io/github/stars/thiagolemosdev/agendanode?label=stars&message=MIT&color=131313&labelColor=323A46" alt="Stars">
+
 </p>
 
 <h1 align="center">
@@ -21,7 +22,7 @@
 
 ## ✍ Short Description
 
-This project is just for studing. This is a CRUD (Create, Read, Update, Delete) maked with Node.js on backend, ejs on frontend and MongoDB. I used outhers javascript framework to, like webpack.
+This project is just for studing. This is a CRUD (Create, Read, Update, Delete) maked with Node.js,ejs, html, css and some frameworks. Here you can create a login anda make login. after login you can create some contacts. all informations are saved on mongo database, and your password are just a hash in database.
 
 ## 🧪 Technologies
 
