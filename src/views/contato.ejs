@@ -1,43 +1,42 @@
 <%- include('includes/head') %>
   <%- include('includes/nav') %>
-    <div class="row">
+    <div class="d-flex justify-content-sm-center">
 
-      <div class="col-lg-2"></div>
+      <div class="container-sm">
+        <div class="col-lg-12 my-3">
+          <h1 class="display text-center">Contato</h1>
+          <p class="text-center lead">Crie ou edite seu contato abaixo</p>
 
-      <div class="col-lg-8 my-3">
-        <h1 class="display text-center">Contato</h1>
-        <p class="text-center lead">Crie ou edite seu contato abaixo</p>
+          <%- include('includes/messages') %>
 
-        <%- include('includes/messages') %>
-
-          <%if (contato._id) { %>
-            <form action="/contato/edit/<%= contato._id%> " method="POST">
-              <%} else{%>
-                <form action="/contato/register" method="POST">
-                  <% }%>
-                    <input type="hidden" name="_csrf" value=<%=csrfToken %>>
-                    <div class="form-group">
-                      <label for="inputEmail">Nome</label>
-                      <input value="<%= contato.nome %>" type="text" class="form-control" name="nome">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputEmail">Sobrenome</label>
-                      <input value="<%= contato.sobrenome %>" type="text" class="form-control" name="sobrenome">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputEmail">Email</label>
-                      <input value="<%= contato.email %>" type="email" class="form-control" name="email">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputEmail">Telefone</label>
-                      <input value="<%= contato.tel %>" type="tel" class="form-control" name="tel">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
-                </form>
+            <%if (contato._id) { %>
+              <form action="/contato/edit/<%= contato._id%> " method="POST">
+                <%} else{%>
+                  <form action="/contato/register" method="POST">
+                    <% }%>
+                      <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+                      <div class="form-group">
+                        <label for="inputEmail">Nome</label>
+                        <input value="<%= contato.nome %>" type="text" class="form-control" name="nome">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail">Sobrenome</label>
+                        <input value="<%= contato.sobrenome %>" type="text" class="form-control" name="sobrenome">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input value="<%= contato.email %>" type="email" class="form-control" name="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail">Telefone</label>
+                        <input value="<%= contato.tel %>" type="tel" class="form-control" name="tel">
+                      </div>
+                      <button type="submit" class="btn btn-outline-secondary">Cadastrar</button>
+                  </form>
 
 
+        </div>
       </div>
 
-      <div class="col-lg-2"></div>
     </div>
     <%- include('includes/footer') %>

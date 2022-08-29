@@ -1,19 +1,27 @@
 <%- include('includes/head') %>
   <%- include('includes/nav') %>
-    <div class="row">
+    <div class="d-flex justify-content-sm-center">
 
-      <div class="col-lg-2"></div>
+      <div class="container-sm">
+        <div class="col-lg-12 my-3">
+          <%- include('includes/messages') %>
 
-      <div class="col-lg-8 my-3">
-        <h1 class="display text-center">Olá, <%= user.email %>
-        </h1>
-        <p class="text-center lead">Você precisa sair para criar outra conta</p>
+            <h1 class="display text-center">Olá, <%= user.email %>
+            </h1>
+            <p class="text-center lead">Você pode criar um novo contato ou visualizar os contatos criados.</p>
+            <div class="row d-flex justify-content-sm-center">
+              <div class="col-6">
+                <a class=" nav-link btn btn-outline-secondary" href="/contato/index">Cadastrar Contato</a>
+              </div>
+              <div class="col-6">
+                <a class=" nav-link btn btn-outline-secondary" href="/">Visualizar Contatos</a>
+              </div>
 
-        <%- include('includes/messages') %>
+            </div>
 
 
+        </div>
       </div>
 
-      <div class="col-lg-2"></div>
     </div>
     <%- include('includes/footer') %>
